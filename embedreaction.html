@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <style>
+    div#reaction_container {
+      margin: auto;
+      width: max-content;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://unpkg.com/@livelike/engagementsdk/livelike.umd.js"></script>
+  <script src="./embedBarStyles.js"></script>
+  <script src="./TNTReactionPicker.js"></script>
+  <div id="reaction_container">
+    <style>
+        span.embed-user-reaction-container.embed-self-user-reaction{
+          background:#E7E9EA
+        }
+        span.embed-user-reaction-container:hover {
+          background:#E7E9EA
+        }
+        span.embed-user-reaction-container.embed-self-user-reaction:hover {
+          background:white
+        }
+        span.embed-user-reaction-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #fff;
+          padding: 4px 8px 4px 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        }
+
+        span.reaction-add-icon.clicked {
+          margin-right: 8px;
+        }
+      
+        .embed-reaction-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 4px !important;
+          padding: 4px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          flex-wrap : nowrap !important;
+          margin-top : 0px !important;
+          background-color: #D0D3D5
+        }
+        
+        img.embed-user-reaction-img {
+          width: 26px;
+          height: 26px;
+        }
+        
+        span.embed-user-reaction-count {
+          font-size: 12px;
+          margin-left: 0px !important;
+          margin-top: 2px;
+        }
+    </style>
+    <livelike-embed-reaction targetgroupid="article_w_cry" targetid="yourTargetID"></livelike-embed-reaction>
+  </div>
+
+  <script>
+    LiveLike.init({
+      clientId: '3FE16VwZNlLDhLYI0i5DjTYtc638v35nBXmyBjxM',
+      logger: true,
+    })
+  </script>
+</body>
+
+</html>
